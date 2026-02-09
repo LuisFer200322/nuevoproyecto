@@ -1,0 +1,124 @@
+/* Fondo negro puro para la barra */
+.bg-black {
+    background-color: #0a0a0a !important;
+    border-bottom: 1px solid #222; /* Línea sutil abajo */
+  }
+  
+  /* Color dorado de la marca */
+  .text-gold {
+    color: #c5a059 !important;
+    font-family: 'Playfair Display', serif; /* Tipografía elegante */
+  }
+  
+  /* Estilo de los enlaces (INICIO, HABITACIONES...) */
+  .custom-link {
+    color: #ffffff !important;
+    font-size: 0.85rem;
+    text-transform: uppercase; /* Todo en mayúsculas */
+    letter-spacing: 2px;       /* Espacio entre letras (Clave para formalidad) */
+    font-weight: 500;
+    padding: 10px 15px !important;
+    position: relative;
+    transition: color 0.3s ease;
+  }
+  
+  /* Efecto Hover: Cambia a dorado */
+  .custom-link:hover {
+    color: #c5a059 !important;
+  }
+  
+  /* La línea dorada debajo al pasar el mouse */
+  .custom-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1px;
+    bottom: 5px;
+    left: 50%;
+    background-color: #c5a059;
+    transition: all 0.3s ease;
+  }
+  
+  .custom-link:hover::after {
+    width: 80%; /* La línea crece */
+    left: 10%;
+  }
+  
+  /* Estilo del Botón RESERVAR */
+  .btn-gold {
+    background-color: #c5a059;
+    color: #000;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+    border: 1px solid #c5a059;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-gold:hover {
+    background-color: transparent;
+    color: #c5a059; /* Se vuelve transparente con letras doradas */
+  }
+  /* --- BOTÓN FLOTANTE: Icono Grande / Texto Sutil --- */
+
+.btn-whatsapp {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  
+  /* Colores Formales */
+  background-color: #111;
+  color: #c5a059;
+  border: 1px solid #c5a059;
+  
+  /* Alineación */
+  display: flex;
+  align-items: center;
+  gap: 12px;           /* Espacio entre icono y texto */
+  padding: 8px 20px;   /* Menos padding vertical para que no se vea gigante */
+  border-radius: 50px;
+  
+  text-decoration: none;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+  z-index: 1000;
+  transition: all 0.4s ease;
+}
+
+/* 1. EL ICONO (Más Grande) */
+.btn-whatsapp svg {
+  width: 40px;  /* Antes 24px, ahora mucho más grande */
+  height: 40px;
+}
+
+/* 2. EL TEXTO (Más Pequeño y Discreto) */
+.whatsapp-text {
+  font-size: 10px;       /* Letra pequeñita y fina */
+  font-weight: 600;      /* Un poco negrita para que se lea aunque sea chica */
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 1.2;      /* Para que si hay dos líneas no se encimen */
+  max-width: 150px;      /* Limitamos el ancho para que no se estire demasiado */
+}
+
+/* Efecto Hover */
+.btn-whatsapp:hover {
+  background-color: #c5a059;
+  color: #000;
+  transform: scale(1.05); /* Un leve zoom general */
+  box-shadow: 0 8px 25px rgba(197, 160, 89, 0.4);
+}
+
+/* Versión Móvil */
+@media (max-width: 576px) {
+  .whatsapp-text {
+    display: none;
+  }
+  .btn-whatsapp {
+    padding: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    justify-content: center;
+  }
+}

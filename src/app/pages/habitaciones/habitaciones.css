@@ -1,0 +1,35 @@
+/* Tipografía elegante para títulos */
+.text-gold {
+    color: #c5a059;
+    font-family: 'Playfair Display', serif;
+  }
+  
+  /* Espaciado de letras */
+  .spacing-lg {
+    letter-spacing: 3px;
+  }
+  
+  /* Contenedor de la imagen para que siempre tenga el mismo tamaño */
+  .img-container {
+    height: 400px; /* Altura fija para uniformidad */
+    overflow: hidden;
+  }
+  
+  .object-fit-cover {
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+  
+  /* Efecto Zoom suave al pasar el mouse por la tarjeta */
+  .room-card:hover .object-fit-cover {
+    transform: scale(1.05);
+  }
+  
+  .room-card {
+    transition: box-shadow 0.3s ease;
+    overflow: hidden; /* Para que la imagen no se salga al hacer zoom */
+  }
+  
+  .room-card:hover {
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1) !important;
+  }

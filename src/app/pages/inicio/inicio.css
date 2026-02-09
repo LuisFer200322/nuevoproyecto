@@ -1,0 +1,111 @@
+/* Estilo para la imagen gigante de fondo */
+.hero-section {
+    position: relative;
+    /* IMPORTANTE: Aquí pondrás la URL de tu imagen de fondo real */
+    background-image: url('https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=2070&auto=format&fit=crop'); 
+    background-size: cover;
+    background-position: center;
+    height: 90vh; /* Ocupa el 90% de la altura de la pantalla */
+  }
+  
+  /* Capa oscura sobre la imagen para que el texto blanco resalte */
+  .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Negro al 50% de transparencia */
+  }
+  
+  /* Tipografía elegante */
+  .spacing-lg {
+    letter-spacing: 5px; /* Separa las letras del título */
+  }
+  
+  /* Color dorado para títulos (Elegancia) */
+  .text-gold {
+    color: #c5a059;
+    font-family: 'Playfair Display', serif; /* Si no carga, usa la del sistema */
+  }
+  
+  /* Línea divisoria elegante */
+  .divider {
+    width: 100px;
+    height: 3px;
+    background-color: #c5a059;
+    opacity: 1;
+  }
+  
+  /* Efecto al pasar el mouse por las tarjetas */
+  .service-card {
+    transition: transform 0.3s ease;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-10px); /* La tarjeta "flota" hacia arriba */
+  }
+  /* --- FOOTER PREMIUM (Grand Hotel Style) --- */
+
+.luxury-footer {
+  background-color: #0b0b0b; /* Negro profundo */
+  color: #adb5bd;
+  border-top: 3px solid #c5a059; /* La "Línea Dorada" característica */
+  font-family: 'Segoe UI', sans-serif;
+  position: relative;
+  z-index: 10;
+}
+
+/* Título de la marca */
+.footer-brand {
+  font-family: 'Playfair Display', serif; /* Tipografía elegante */
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+/* Espaciado para subtítulos */
+.spacing-sm {
+  letter-spacing: 2px;
+  font-size: 0.9rem;
+  color: #fff; /* Blanco puro para títulos */
+}
+
+/* --- ENLACES CON EFECTO DESPLAZAMIENTO --- */
+.footer-link {
+  text-decoration: none;
+  color: #888;
+  transition: all 0.3s ease;
+  display: inline-block; /* Necesario para que se mueva */
+}
+
+.footer-link:hover {
+  color: #c5a059; /* Cambia a dorado */
+  transform: translateX(10px); /* Se mueve a la derecha al pasar el mouse */
+}
+
+/* --- BOTONES DE REDES SOCIALES --- */
+.social-btn {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #333;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%; /* Círculos perfectos */
+  text-decoration: none;
+  font-size: 0.8rem;
+  transition: all 0.3s ease;
+}
+
+.social-btn:hover {
+  background-color: #c5a059;
+  border-color: #c5a059;
+  color: #000;
+}
+
+/* Barra inferior más oscura */
+.footer-bottom {
+  background-color: #050505;
+  border-top: 1px solid #1a1a1a;
+}

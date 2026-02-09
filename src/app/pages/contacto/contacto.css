@@ -1,0 +1,54 @@
+/* Importar fuente si no se heredó */
+.text-gold {
+    color: #c5a059 !important;
+  }
+  
+  .bg-black {
+    background-color: #111;
+  }
+  
+  .spacing-lg {
+    letter-spacing: 3px;
+  }
+  
+  /* --- ESTILOS DEL FORMULARIO --- */
+  
+  /* Quitar el borde gris predeterminado y dejar solo la línea de abajo */
+  .form-control, .form-select {
+    border-bottom: 1px solid #ddd !important;
+    background-color: transparent;
+  }
+  
+  /* Cuando le das clic al input (Focus) */
+  .form-control:focus, .form-select:focus {
+    box-shadow: none; /* Quita el brillo azul feo */
+    border-color: #c5a059 !important; /* Pone la línea dorada */
+    background-color: #fffcf5; /* Un fondo crema muy sutil */
+  }
+  
+  /* Color de las etiquetas flotantes */
+  .form-floating label {
+    color: #999;
+  }
+  
+  .form-control:focus ~ label,
+  .form-select:focus ~ label {
+    color: #c5a059; /* La etiqueta se vuelve dorada al escribir */
+  }
+  
+  /* Botón Dorado (Igual que en el Navbar pero más grande) */
+  .btn-gold {
+    background-color: #c5a059;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: 1px solid #c5a059;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-gold:hover {
+    background-color: #fff;
+    color: #c5a059;
+    cursor: pointer;
+  }
